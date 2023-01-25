@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grouping tags</title>
+    <style>
+        body{
+            background-color: rgba(211, 209, 206, 0.87);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: rgba(56, 197, 197, 0.863);
+            padding: 5px;
+            border-radius: 0px 0px 10px 10px;
+        }
+
+        nav{
+            background-color: rgb(6, 87, 240);
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.37);
+            border-radius: 5px;
+
+        }
+        nav > a{
+            margin: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+            border-style: ridge;
+            border-width: 1px;
+            padding: 1px 3px 1px 3px;
+        }
+
+        nav:hover > a{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: #ffe4c4;
+            width: 600px;
+            margin: 16px auto 16px auto;
+            padding: 10px;
+            box-shadow: 1px 1px 5px  #00000073;
+            border-radius: 6px;
+            
+            
+        }
+
+        section > p{
+            text-align: justify;
+        }
+
+        .box1{
+            width: 200px;
+            height: 250px;
+            border-style: ridge;
+            border-width: 1px;
+            padding: 1px 5px 1px 5px;
+            margin: 5px 10px 5px 10px ;
+            background-color: rgba(84, 84, 245, 0.733);
+            border-radius: 5px 20px; 
+            box-shadow: 3px 3px 3px 1px #00000070; 
+        }
+
+        .lojas{
+            background-color: rgba(180, 47, 47, 0.767);
+            width: 200px;
+            height: 250px;
+            border-style: ridge;
+            border-width: 1px;
+            padding: 1px 5px 1px 5px;
+            margin: 10px;
+            border-radius: 20px 5px;
+            box-shadow: -4px 4px 5px 1px #00000070;
+        }
+
+        footer{
+            background-color: rgb(22, 22, 22);
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        footer > h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Concerto de celulares e computador</h1>
+        <nav>
+            <a class="menu" href="">.link</a>
+            <a class="menu" href="">.link</a>
+            <a class="menu" href="">.link</a>
+            <a class="menu" href="">.link</a>
+            <a class="menu" href="">.link</a>
+        </nav>      
+    </header>
+
+    <main>
+        <section class="text_celular">
+            <h2>celulares</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis totam quisquam blanditiis velit architecto minus quibusdam adipisci itaque laudantium odit, tempora quae rem possimus est ipsam, ipsa, dolores dolorem. Eos?</p>
+            <article class="box1">
+                <h3>Caixa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sunt voluptate, quasi aspernatur ad earum temporibus itaque? Atque, ex a iure, provident fugiat fugit dolore dignissimos autem similique quasi repudiandae.</p>
+            </article>
+        </section>
+        <section class="text_computator">
+            <h2>Computadores</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore eaque amet suscipit porro. Hic natus illo suscipit dolores, ipsam rerum pariatur consequuntur aspernatur consectetur, laboriosam laudantium distinctio itaque sed corporis.</p>
+            <article class="lojas">
+                <h3>lojas para comprar hardware</h3>
+                <ul>
+                    <li><a href=""></a>loja 1</li>
+                    <li><a href=""></a>loja 2</li>
+                    <li><a href=""></a>loja 3</li>
+                    <li><a href=""></a>loja 4</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h2 class="titulo_footer">colaboradores</h2>
+        <p>
+            <ul>
+                <li>cara</li>
+                <li>cara</li>
+                <li>cara</li>
+            </ul>
+        </p>
+    </footer> 
+</body>
+</html>
