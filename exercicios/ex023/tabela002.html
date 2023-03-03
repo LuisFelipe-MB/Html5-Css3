@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    table {
+        width: 500px;
+        border-collapse: collapse;
+    }
+    td, th {
+        padding: 5px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    th {
+        background-color: rgba(62, 163, 245, 0.589);
+    }
+    td.num{
+        text-align: right;
+    }
+    td#diferente {
+        background-color: rgba(100, 100, 100, 0.555);
+    }
+    
+</style>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <TAble> 
+        <thead>
+            <tr>
+                <th>Posição</th>
+                <th>Estado</th>
+                <th>população</th>
+                <th>% da pop. total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bahia</td>
+                <td class="num">14.659.023</td>
+                <td>7.1%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Paraná</td>
+                <td class="num">11.835.379</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rio Grando do Sul</td>
+                <td class="num">11.088.065</td>
+                <td>5,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="diferente">---</td>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>116.192.852</strong></td>
+                <td><strong>58,3%</strong></td>
+            </tr>
+        </tfoot>
+    </TAble>
+</body>
+</html>
