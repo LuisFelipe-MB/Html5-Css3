@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.js" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected >---Escolha---</option>
+                <optgroup label="A">
+                    <option value="AC">Acre</option>
+                    <option value="Al">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                </optgroup>
+                <optgroup label="B">
+                    <option value="BA">Bahia</option>
+                </optgroup>
+                <optgroup label="C">
+                    <option value="CE">Ceará</option>
+                </optgroup>
+                <optgroup label="E">
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+                <optgroup label="G">
+                    <option value="GO">Goiás</option>
+                </optgroup>
+                <optgroup label="M">
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="P">
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                </optgroup>
+                <optgroup label="R">
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                </optgroup>
+                <optgroup label="S">
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="T">
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="D">                                 
+                    <option value="DF">Distrito Federal</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Engenheiro</option>
+                <option>Médico(a)</option>
+                <option>Professor</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="icmt">Comentário: </label><br>
+            <textarea name="cmt" id="icmt" cols="30" rows="10" maxlength="100"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
