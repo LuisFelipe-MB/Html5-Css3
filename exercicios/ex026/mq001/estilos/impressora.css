@@ -1,0 +1,25 @@
+/* Configuração visual para impressora */
+@charset "UTF-8" ;
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+p {
+    text-align: justify;
+}
+
+article::after {
+    content: 'Esse site foi impresso do site www.luisbrabão.com.br';
+}
